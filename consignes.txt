@@ -1,0 +1,33 @@
+Jeu Asteroids
+Stéphane Lopes, Pablo de Oliveira Castro, Benjamin Cohen-Boulakia
+v2024-2025
+
+L'objectif est de créer un jeu Asteroids en utilisant la bibliothèque Macroquad.
+
+== Instructions
+* Travail en binôme.
+* Utilisez `cargo build` pour compiler et `cargo run` pour exécuter.
+* Respectez le style Rust (`cargo fmt`, `cargo clippy`).
+* Implémentez l'affichage et les interactions dans `main.rs`.
+* Gérer les objets (astéroïdes, vaisseau, missiles) dans des modules séparés.
+* Documentez et ajoutez des tests unitaires (`cargo doc`, `cargo test`).
+
+== Fonctionnalités
+* Les objets (vaisseau, astéroïdes, missiles) sont ronds pour simplifier les collisions.
+* Les astéroïdes se déplacent à vitesse constante.
+* Le vaisseau a une inertie et peut être contrôlé avec le clavier.
+* Les collisions réduisent le bouclier du vaisseau ou détruisent les objets.
+* Les projectiles explosent les astéroïdes ou disparaissent en sortant de l'écran.
+* Le jeu se termine par victoire, défaite ou abandon (Échap).
+
+== Étapes
+1. **Astéroïdes** : Gérer plusieurs tailles et scission après collision.
+2. **Vaisseau** : Ajouter un module, affichage, contrôle clavier, et gestion des collisions.
+3. **Missiles** : Ajouter un module, affichage, tir (Espace), et gestion des collisions.
+4. **Trait commun** : Créer un trait `StellarObject` pour factoriser les comportements.
+5. **Améliorations** (optionnel) : Ajouter des graphismes, sons, scores, niveaux, ou un modèle MVC.
+
+== Références
+* Jeu Asteroids : https://fr.wikipedia.org/wiki/Asteroids
+* Bibliothèque Macroquad : https://macroquad.rs/
+* Exemple : https://github.com/not-fl3/macroquad/blob/master/examples/asteroids.rs
